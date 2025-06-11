@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Hábitos</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+    <string name="nav_header_title">Hábitos Saudáveis</string>
+    <string name="nav_header_subtitle">Sua saúde em dia</string>
+    <string name="nav_header_desc">Topo da Navegação</string>
+    <string name="action_diminuir">Diminuir Tempo</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_home">Atividade</string>
+    <string name="menu_profile">Premium</string>
+    <string name="menu_list">Hábitos</string>
+
+    <string name="habito">Hábito</string>
+    <string name="add_habito_intervalo">Intervalo em horas</string>
+    <string name="concluir_habito">Concluir</string>
+    <string name="next_button">Próximo</string>
+
+    <string name="signup_title">Cadastro</string>
+    <string name="signup_nome_hint">Nome</string>
+    <string name="signup_senha_hint">Senha</string>
+    <string name="signup_confirmar_senha_hint">Confirmar senha</string>
+    <string name="signup_email_hint">E-mail</string>
+
+    <string name="payment_title">Pagamento</string>
+    <string name="payment_cpf_hint">CPF</string>
+    <string name="payment_nome_titular_hint">Nome do Titular</string>
+    <string name="payment_numero_cartao_hint">Número do Cartão</string>
+    <string name="payment_remember">Gravar forma de pagamento</string>
+    <string name="payment_validade_cartao_hint">Validade</string>
+    <string name="payment_bandeira_hint">Selecione a Bandeira:</string>
+    <string name="payment_codigo_cartao_hint">CVV</string>
+
+    <string name="profile_title">Perfil</string>
+    <string name="premium_lore">Por apenas <b>R$9.99</b> você troca seus pontos do jogo por descontos exclusivos em lojas parceiras!</string>
+    <string name="premium_button">Clique Aqui</string>
+
+    <string name="address_title">Endereço</string>
+    <string name="address_hint">Endereço</string>
+    <string name="address_cidade_hint">Cidade</string>
+    <string name="address_estado_hint">Estado</string>
+    <string name="address_postal_hint">Código Postal</string>
+    <string name="address_telefone_hint">Telefone</string>
+    <string name="payment_button">Realizar Pagamento</string>
+    <string name="set_habito">Definir</string>
+    <string name="sobre_email"><b>E-Mail: </b>habitossaudaveis@gmail.com</string>
+    <string name="sobre_site"><b>Site: </b>https://habitossaudaveis.com</string>
+    <string name="menu_sobre">Sobre</string>
+</resources>

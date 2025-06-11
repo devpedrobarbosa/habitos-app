@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.uva.habitos.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="br.uva.habitos.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="br.uva.habitos.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_seja_premium"
+            app:destination="@id/nav_seja_premium"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_seja_premium"
+        android:name="br.uva.habitos.ui.profile.SejaPremiumFragment"
+        tools:layout="@layout/fragment_seja_premium">
+        <action
+            android:id="@+id/action_seja_premium_to_signup"
+            app:destination="@id/nav_signup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="br.uva.habitos.ui.auth.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signup_to_address"
+            app:destination="@id/nav_address" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_address"
+        android:name="br.uva.habitos.ui.payment.AddressFragment"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_address_to_payment"
+            app:destination="@id/nav_payment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_payment"
+        android:name="br.uva.habitos.ui.payment.PaymentFragment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_payment_to_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_payment_to_confirmar_dados"
+            app:destination="@id/nav_confirmar_dados" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_confirmar_dados"
+        android:name="br.uva.habitos.ui.confirmar.ConfirmarDadosFragment"
+        tools:layout="@layout/fragment_confirmar_dados">
+        <action
+            android:id="@+id/action_confirmar_dados_to_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="br.uva.habitos.ui.sobre.SobreFragment"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/fragment_sobre">
+    </fragment>
+</navigation>

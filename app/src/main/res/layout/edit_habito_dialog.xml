@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/add_habito_intervalo" />
+
+    <NumberPicker
+        android:id="@+id/edit_intervalo_habito"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autofillHints="name"
+        android:hint="@string/add_habito_intervalo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</LinearLayout>

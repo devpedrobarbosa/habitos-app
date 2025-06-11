@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.confirmar.ConfirmarDadosFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Dados"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/signup_nome_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            
+            <EditText
+                android:id="@+id/signup_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:hint="@string/signup_nome_hint"
+                android:inputType="text"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/signup_email_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="emailAddress"
+                android:hint="@string/signup_email_hint"
+                android:inputType="textEmailAddress"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/address_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/address_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="postalAddress"
+                android:hint="@string/address_hint"
+                android:inputType="textPostalAddress"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/address_estado_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <br.uva.habitos.util.MultiSpinner
+                android:id="@+id/address_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/address_cidade_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/address_cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="name"
+                android:hint="@string/address_cidade_hint"
+                android:inputType="text"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/address_postal_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/address_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="postalCode"
+                android:hint="@string/address_postal_hint"
+                android:inputType="number"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/address_telefone_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/address_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="phone"
+                android:hint="@string/address_telefone_hint"
+                android:inputType="phone"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_cpf_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/payment_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="name"
+                android:hint="@string/payment_cpf_hint"
+                android:inputType="number"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_numero_cartao_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/payment_numero_cartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="creditCardNumber"
+                android:hint="@string/payment_numero_cartao_hint"
+                android:inputType="number"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_bandeira_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <br.uva.habitos.util.MultiSpinner
+                android:id="@+id/payment_bandeira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_nome_titular_hint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/payment_nome_titular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:autofillHints="name"
+                android:hint="@string/payment_nome_titular_hint"
+                android:inputType="text"
+                android:enabled="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/payment_validade_cartao_hint"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/payment_validade_cartao"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+
+                        android:autofillHints="creditCardExpirationDate"
+                        android:hint="@string/payment_validade_cartao_hint"
+                        android:inputType="text"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/payment_codigo_cartao_hint"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/payment_codigo_cartao"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+
+                        android:autofillHints="creditCardSecurityCode"
+                        android:hint="@string/payment_codigo_cartao_hint"
+                        android:inputType="number"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirmar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25dp"
+        android:text="Confirmar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
